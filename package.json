@@ -1,0 +1,17 @@
+{
+  "name": "githubaction.createresourcegroup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@azure/arm-resources": "^5.0.1",
+    "@azure/identity": "^2.1.0"
+  }
+}

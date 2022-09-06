@@ -1,0 +1,19 @@
+name: 'Create Resource Group'
+description: 'Provision a resource group in Azure.'
+inputs:
+  name:
+    required: true
+    description: 'The name of the resource group to create e.g. APPNAME-RESOURCE-STAGING.'
+  location:
+    required: true
+    description: 'The location of the resource group to create e.g. westeurope, westus.'
+outputs:
+  id:
+    description: 'The id of the created resource group.'
+  location:
+    description: 'The location of the created resource group.'
+  provisioning_state:
+    description: 'The provisioning state result of the created resource group.'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
